@@ -1,0 +1,34 @@
+a {
+  padding: 10px;
+}
+
+body {
+  display: flex;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: none;
+}
+
+.sidebar-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 20vw;
+  height: 100vh;
+}
+#main-container {
+  padding: 100px;
+}
