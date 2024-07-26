@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with USB receiver",
+    "price": 19.99,
+    "category": "Electronics",
+    "stock": 150
+  },
+  {
+    "id": 2,
+    "name": "Bluetooth Headphones",
+    "description": "Noise-cancelling over-ear headphones with Bluetooth connectivity",
+    "price": 99.99,
+    "category": "Electronics",
+    "stock": 75
+  },
+  {
+    "id": 3,
+    "name": "Gaming Keyboard",
+    "description": "Mechanical gaming keyboard with RGB lighting",
+    "price": 49.99,
+    "category": "Computers",
+    "stock": 200
+  }
+]

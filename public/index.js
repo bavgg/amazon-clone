@@ -1,4 +1,4 @@
-import { Sidebar } from "./ui/Sidebar.js";
+import Navbar from "./layout/Navbar.js";
 import Transaction from "./ui/Transaction.js";
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
 
 function Body() {
   return `
-        ${Sidebar()}
+        ${Navbar()}
         <main id="main-container" style="width: 100%;">
 
         </main>
@@ -27,5 +27,3 @@ function Body() {
 const body = document.querySelector("body");
 body.innerHTML = Body();
 
-const main_container = document.querySelector("main");
-main_container.innerHTML = Transaction();

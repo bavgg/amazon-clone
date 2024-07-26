@@ -1,34 +1,14 @@
-a {
-  padding: 10px;
-}
+:root {
+  --primary: #131921;
+  --accent: #FEBC69;
+  --text1: #555;
+  --text2: #7F7F7F;
+  --text3: #666;
+  --bg1: #E6E6E6;
 
-body {
-  display: flex;
-}
+  --bd-radius: 4px;
 
-table {
-  border-collapse: collapse;
-}
-
-table,
-th,
-td {
-  border: none;
-}
-
-.sidebar-link {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#sidebar-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 20vw;
-  height: 100vh;
-}
-#main-container {
-  padding: 100px;
+  --ft: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica,
+  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --ft-size: 16px;
 }

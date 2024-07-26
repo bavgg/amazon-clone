@@ -1,0 +1,33 @@
+<input id="query" />
+<div id="match-list">
+
+</div>
+
+<script>
+  const query = document.getElementById("query");
+  query.addEventListener("input", () => {
+    searchProducts(query.value);
+  });
+
+  const matchList = document.getElementById('match-list');
+
+  async function searchProducts(query) {
+    console.log("🚀 ~ searchProducts ~ query:", query);
+
+    const response = await fetch("./products.json");
+    const data = await response.json();
+
+    let matches = data.filter((datum) => {
+      const regex = new RegExp(`^${query}`, "gi");
+      return datum.name.match(regex);
+    });
+
+    const suggestions =  matches.map(match => {
+        return `
+            <div>${match.name}</div>
+        `;
+    })
+
+    matchList.innerHTML = suggestions;
+  }
+</script>
