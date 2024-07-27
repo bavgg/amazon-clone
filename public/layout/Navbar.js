@@ -1,6 +1,6 @@
 function Searchbar() {
   return `
-                <div style="display: flex; width: 100%;">
+                <div style="display: flex; width: 100%; min-width: 428px;">
                     <div style="font-size: 13px; display: flex; justify-content: center; align-items: center; position: relative; border-top-left-radius: var(--bd-radius); border-bottom-left-radius: var(--bd-radius); width: 55px; height: 38px; margin-top: 1px; background: var(--bg1); background-image: url('https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-2x-reorg-privacy._CB587940754_.png'); background-repeat: repeat-x; background-position: 0 1000px;">
                         <span style="color: var(--text1); margin-right: 10px;">All</span>
                     </div>
@@ -42,8 +42,8 @@ export default function Navbar() {
 
             ${Searchbar()}
             <a>
-                <span style="color: white; font-weight: 400; font-size: 12px;">Hello, Jonas</span>
-                <span style="color: white; font-weight: 700; font-size: 14px;">Sign In</span>
+                <span style="color: white; font-weight: 400; font-size: 12px; white-space: nowrap;">Hello, Jonas</span>
+                <span style="color: white; font-weight: 700; font-size: 14px; white-space: nowrap;">Sign In</span>
             </a>
             <a>
                 <span style="color: white; font-weight: 400; font-size: 12px;">Returns</span>

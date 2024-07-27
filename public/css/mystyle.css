@@ -12,3 +12,11 @@
   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --ft-size: 16px;
 }
+
+body {
+  background-color: #e3e6e6;
+}
+
+li {
+  list-style-type: none;
+}
