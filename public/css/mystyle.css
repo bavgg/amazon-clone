@@ -20,3 +20,35 @@ body {
 li {
   list-style-type: none;
 }
+#odd {
+    visibility: hidden;
+}
+@media (max-width: 1240px) {
+  #odd {
+    visibility: visible;
+  }
+
+}
+.card {
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  padding: 20px;
+  margin: 0 10px;
+    margin-bottom: 0px;
+  max-width: 400px;
+  min-width: 290px;
+  height: 420px;
+  flex: 1 0 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+/* @media (max-width: 1000px) {
+  .cards-container {
+    min
+  }
+
+} */
+
