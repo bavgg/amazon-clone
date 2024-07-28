@@ -1,19 +1,6 @@
 import Navbar from "./layout/Navbar.js";
-import Transaction from "./ui/Transaction.js";
+import Footer from "./layout/Footer.js";
 
-function Home() {
-  return `
-    <h3>Hello, Admin!</h3>
-
-    <div>Stats:</div>
-
-    <h4>Earnings</h4>
-    <p>Overall Earnings: PHP 4000</p>
-
-    <h4>Profits</h4>
-    <p>Overall Profits: PHP 4000</p>
-  `;
-}
 function Carousel() {
   return `
           <div style="max-height: 230px; max-width: 1500px; margin: 0 auto; position: relative; ">
@@ -48,7 +35,6 @@ function Carousel() {
           </div>
   `
 }
-
 function Card(header, footer, content = null, id = '') {
   return `
             <div class="card" id="${id}" >
@@ -83,7 +69,6 @@ function Item(url, item_name) {
       </a>
   `
 }
-
 function ContentTypeI(links, headers) {
   return `
   <div style="margin-bottom: 44px; flex-grow: 1;" >
@@ -101,7 +86,6 @@ function ContentTypeI(links, headers) {
   
   `
 }
-
 function ContentTypeII(image) {
   return `
       <a style="width: 100%; height: 100%; position: relative; overflow: hidden; margin-bottom: 44px; ">
@@ -109,8 +93,10 @@ function ContentTypeII(image) {
       </a>
   `
 }
+
+
+
 function Body() {
-  
   const DivContent1 = ContentTypeI(
     { 
       image1: 'https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_2x._SY232_CB667159060_.jpg',
@@ -125,9 +111,7 @@ function Body() {
       header4: 'Chairs'
     }
   );
-  
   const DivContent2 = ContentTypeII('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/1460058_2528408_us_gw_pc_single_category_card_1x_758x608_us-en._SY608_CB609924804_.jpg');
-
   const DivContent3 = ContentTypeI(
     { 
       image1: 'https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg',
@@ -170,7 +154,6 @@ function Body() {
       header4: 'Jewelry'
     }
   );
-
   const DivContent10 = ContentTypeI(
     { 
       image1: 'https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_372x232_LP-HP_B08MYX5Q2W_01.23._SY232_CB619238939_.jpg',
@@ -185,11 +168,6 @@ function Body() {
       header4: 'Health and Beauty'
     }
   );
-
-
-  
-
-
   const DivContent4 = ContentTypeII('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v1._SY608_CB573698005_.jpg');
   const DivContent7 = ContentTypeII('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v3._SY608_CB573698005_.jpg');
   const DivContent9 = ContentTypeII('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v5._SY608_CB573698005_.jpg');
@@ -216,9 +194,9 @@ function Body() {
           </div>
           
         </main>
+        ${Footer()}
     `;
 }
 
 const body = document.querySelector("body");
 body.innerHTML = Body();
-

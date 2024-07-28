@@ -21,11 +21,11 @@ li {
   list-style-type: none;
 }
 #odd {
-    visibility: hidden;
+    display: none;
 }
 @media (max-width: 1240px) {
   #odd {
-    visibility: visible;
+    display: flex;
   }
 
 }
@@ -35,7 +35,7 @@ li {
   z-index: 1;
   padding: 20px;
   margin: 0 10px;
-    margin-bottom: 0px;
+  margin-bottom: 0px;
   max-width: 400px;
   min-width: 290px;
   height: 420px;
@@ -45,10 +45,12 @@ li {
   gap: 10px;
   margin-bottom: 20px;
 }
-/* @media (max-width: 1000px) {
-  .cards-container {
-    min
-  }
+.li {
+  list-style-type: none;
+  margin: 0 0 10px;
+}
 
-} */
-
+.li a {
+  color: #DDD;
+  font-size: 13px;
+}
